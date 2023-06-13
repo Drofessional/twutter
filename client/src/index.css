@@ -1,0 +1,23 @@
+body {
+    padding-top: 60px; /* adjust this to match the height of your navbar */
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white; /* or any color you prefer */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* optional: add a slight shadow for depth */
+    z-index: 100; /* optional: ensure the navbar appears above other content */
+  }
+  
+  .navbar-options {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* adjust as needed */
+  }
+  
+  .navbar-options p {
+    margin: 0; /* remove default paragraph margins */
+  }
+  

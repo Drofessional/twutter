@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:{{$dotenv PORT}}/api
+
+# @name GetPosts
+GET {{baseUrl}}/post/
+###
+
+@postId = {{GetPosts.response.body.0._id}}
+@postAuthor = {{GetPosts.response.body.0.author.handle}}
+
+GET {{baseUrl}}/post/{{postId}}
+###
+
+GET {{baseUrl}}/user/{{postAuthor}}
+###
+
+POST {{baseUrl}}/auth/signup
+content-type: application/json
+
+{
+  "username": "samzanca1",
+  "password":"password123"
+}
+###
+
+POST {{baseUrl}}/auth/signin
+content-type: application/json
+
+{
+  "username": "samzanca1",
+  "password":"password123"
+}
