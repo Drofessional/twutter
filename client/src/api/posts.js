@@ -6,6 +6,12 @@ export async function getPosts() {
   return response.data
 }
 
+//GET post by ID
+export async function getPostsByID(id) {
+  const response = await api.get(`/post/${id}`)
+  return response.data
+}
+
 // POST requests
 export async function createPost(twuut, username) {
   const response = await api.post('/post/', {

@@ -2,22 +2,35 @@ body {
     padding-top: 60px; /* adjust this to match the height of your navbar */
   }
   
-  .navbar {
+  .navbar-container {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: white; /* or any color you prefer */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* optional: add a slight shadow for depth */
     z-index: 100; /* optional: ensure the navbar appears above other content */
-  }
-  
-  .navbar-options {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px; /* adjust as needed */
   }
   
-  .navbar-options p {
-    margin: 0; /* remove default paragraph margins */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right .nav-item {
+    margin-left: 10px; /* add space between navbar items */
+    white-space: nowrap; /* prevent the item from wrapping to the next line */
+  }
+  
+  .navbar-right .nav-item:first-child {
+    margin-left: auto; /* push the first navbar item to the right */
   }
   

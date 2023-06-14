@@ -1,17 +1,20 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar">
-        <div className="navbar-left">
-        <p><Link to="/">All Twuuts</Link></p>  
-        
-          <p><Link to="/new">New Twuut</Link></p>
-          <div className="navbar-right">
-          <p>Log Out</p>  
-          </div>
+    <div className="navbar-container">
+      <div className="navbar-left">
+        <div className="nav-item">
+          <Link to="/"> All Twuuts </Link>
         </div>
-    </nav>
+        <div className="nav-item">
+          <Link to="/new">New Twuut</Link>
+        </div>
+      </div>
+      <div className="navbar-right">
+        <div className="nav-item">Log Out</div>
+      </div>
+    </div>
   );
 }
 

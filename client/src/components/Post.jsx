@@ -15,6 +15,7 @@ export default function Post({
       <p style={{whiteSpace: 'pre-wrap'}}>
         {text}
       </p>
+      <Link to={`/post/${id}`}>More Details</Link>
     </div>
   )
 }
